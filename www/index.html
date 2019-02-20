@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: 'unsafe-eval' 'unsafe-inline' *; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: *;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="./dist/index.css" />
+</head>
+
+<body class="bg-secondary text-light fixed" style="height:100%;">
+
+    <header>
+        <nav id="menu2">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow p-2 fixed-top">
+                <a class="navbar-brand" href="#">Color Extractor</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto" id="menu">
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+        <div id="header" class="container-fluid"></div>
+    </header>
+
+    <main class="container-fluid text-center">
+        <input type="file" id="file" style="display:none;">
+        <div id="espaceBoutonUp" class=" ml-auto mr-auto mt-4 bg-primary col-8 col-lg-3 shadow pt-5  pb-1"></div>
+        <div id="previewColor" class="row mx-auto col-12 col-lg-10 shadow p-0">
+
+            <div id="TitrePreview" class="col-12 col-lg-12 bg-success justify-content-center mx-auto shadow p-3">
+                <h1><b>PREVIEW</b></h1>
+            </div>
+
+            <!-- image color et preview -->
+
+            <div id="colorPanel">
+
+            </div>
+
+            <div id="previewImg">
+                <!-- Preview -->
+                <div style="overflow:hidden; background-position: center; background-size: cover;">
+                    <img id="imagePreview" src="./assets/imgPlaceholder.png"
+                        style="height:auto; width: 100%; margin-top: 5em; margin-bottom: 5em;">
+                </div>
+            </div>
+        </div>
+
+        <div id="espaceBoutonDel" class="mx-auto"></div>
+
+        </div>
+
+        <div id="TitreGalerie" style=" margin-top: 2em;"
+            class="row col-10 col-lg-10 bg-success justify-content-center mx-auto shadow p-3">
+            <h1><b>GALERIE</b></h1>
+        </div>
+        <div id="gallery" class="row justify-content-center ml-auto mr-auto bg-light col-10 col-lg-10 shadow "
+            style="min-height: 5em; margin-bottom: 2em; padding-top: 2em; padding-bottom: 2em;"></div>
+
+        <div id="contact"></div>
+
+        <footer class="bottom">
+            <nav id="footerB" class="navbar navbar-expand-lg navbar-dark bg-danger row shadow" style="margin-top:2em;">
+                <a class="navbar-brand" href="#">Gillian Sokoloff</a>
+            </nav>
+
+        </footer>
+
+    </main>
+    <!-- <script type="text/jquery" src="./node_modules/" -->
+    <!-- <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <!-- DIST ??? SRC ??? -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="./dist/index.js"></script>
+
+
+</body>
+
+</html>
